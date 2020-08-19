@@ -1,0 +1,61 @@
+
+Clover EFI installer log - Fri Jun 12 23:27:14 CEST 2020
+Installer version: v2.5k r5093 EFI bootloader
+======================================================
+/dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         256.1 GB   disk0
+   1:           Windows Recovery                         523.2 MB   disk0s1
+   2:         Microsoft Reserved                         16.8 MB    disk0s2
+   3:                        EFI SSD_EFI                 314.6 MB   disk0s3
+   4:                 Apple_APFS Container disk1         60.9 GB    disk0s4
+   5:       Microsoft Basic Data                         193.3 GB   disk0s5
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +60.9 GB    disk1
+                                 Physical Store disk0s4
+   1:                APFS Volume Hackintosh              13.6 GB    disk1s1
+   2:                APFS Volume Preboot                 44.3 MB    disk1s2
+   3:                APFS Volume Recovery                510.4 MB   disk1s3
+   4:                APFS Volume VM                      1.1 GB     disk1s4
+
+/dev/disk2 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk2
+   1:                        EFI EFI                     209.7 MB   disk2s1
+   2:                 Apple_APFS Container disk4         455.7 GB   disk2s2
+   3:                  Apple_HFS Install macOS Mojave    44.3 GB    disk2s3
+   4:                 Apple_APFS Container disk3         60.0 GB    disk2s4
+   5:                  Apple_HFS BACKUPMAY2020           139.9 GB   disk2s5
+   6:       Microsoft Basic Data GAMES                   299.9 GB   disk2s6
+
+/dev/disk3 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +60.0 GB    disk3
+                                 Physical Store disk2s4
+   1:                APFS Volume DATA                    44.2 GB    disk3s1
+
+/dev/disk4 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +455.7 GB   disk4
+                                 Physical Store disk2s2
+   1:                APFS Volume Maxtor                  437.9 GB   disk4s1
+
+Target volume /Volumes/Hackintosh on disk1 is APFS on physical store disk0s4
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/Hackintosh/EFIROOTDIR/EFI folder to /Volumes/Hackintosh/EFI-Backups/r5093/2020-06-12-23h27/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing UEFI/AppleUITheme.efi driver because AppleUiSupport driver present
+
+Using default theme 'BGM'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
